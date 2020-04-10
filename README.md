@@ -53,4 +53,4 @@ $ echo ${JAVA_HOME}
 
 ### Reference
 1. Install [java8](https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a)
-2 [jenv](https://github.com/jenv/jenv)
+2. [jenv](https://github.com/jenv/jenv)
