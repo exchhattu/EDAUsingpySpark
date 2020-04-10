@@ -40,7 +40,6 @@ $ jenv add <jdk_path>
 $ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 ```
 
-*  
 ```
 $ jenv local 11.0.2
 $ exec $SHELL -l
@@ -54,3 +53,4 @@ $ echo ${JAVA_HOME}
 
 ### Reference
 1. Install [java8](https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a)
+2 [jenv](https://github.com/jenv/jenv)
