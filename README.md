@@ -1,27 +1,46 @@
 
+
+
+## Fixing UPF problem
 While using user defined function (UDF), the following error was occurred
 ```
 IllegalArgumentException: 'Unsupported class file major version 5'
 ```
+### Solution
 
-Solution, it required old java
+It requires java8 version. To make java8 installation easier and avoid the conflict with already installed
+java version.  
 
-I am not intersted to mess up my 
+```
+$ brew cask install homebrew/cask-versions/adoptopenjdk8
+$ /usr/libexec/java_home -V
+```
 
-brew install jenv
+After above installation, following error will be displayed.
+```
+error : /Users/rojan/.jenv/versions/openjdk64-1.8.0.242: No such file or directory
+```
+This error can be easily solved using 
+```
+$ mkdir -p ~/.jenv/versions
+```
 
-brew cask install homebrew/cask-versions/adoptopenjdk8
-/usr/libexec/java_home -V
+* Install jenv 
+```
+$ brew install jenv
+```
 
-n: /Users/rojan/.jenv/versions/openjdk64-1.8.0.242: No such file or directory
-mkdir -p ~/.jenv/versions
-
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
-penjdk64-1.8.0.242 added
-1.8.0.242 added
-1.8 added
-
+* Check existing JAVA version 
+``` 
 $ jenv versions
+```
+
+* Add jdk_path using jenv
+```
+$ jenv add <jdk_path>
+$ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+```
+
 
 Reference
 
