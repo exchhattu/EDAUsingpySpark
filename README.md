@@ -1,12 +1,12 @@
 
 
 
-## Fixing UPF problem
+### Fixing UPF problem
 While using user defined function (UDF), the following error was occurred
 ```
 IllegalArgumentException: 'Unsupported class file major version 5'
 ```
-### Solution
+* Solution
 
 It requires java8 version. To make java8 installation easier and avoid the conflict with already installed
 java version.  
