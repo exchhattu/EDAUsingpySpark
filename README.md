@@ -6,7 +6,6 @@ While using user defined function (UDF), the following error was occurred
 ```
 IllegalArgumentException: 'Unsupported class file major version 5'
 ```
-* Solution
 
 It requires java8 version. To make java8 installation easier and avoid the conflict with already installed
 java version.  
@@ -41,7 +40,17 @@ $ jenv add <jdk_path>
 $ jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 ```
 
+*  
+```
+$ jenv local 11.0.2
+$ exec $SHELL -l
+$ cat .java-version
+```
 
-Reference
+Is ```JAVA_HOME``` set?
+```
+$ echo ${JAVA_HOME}
+```
 
-1. java8 (https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a)
+### Reference
+1. Install [java8](https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a)
