@@ -51,6 +51,11 @@ Is ```JAVA_HOME``` set?
 $ echo ${JAVA_HOME}
 ```
 
+If JAVA_HOME is not setup
+```
+$ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+```
+
 ### Reference
 1. Install [java8](https://medium.com/@brunofrascino/working-with-multiple-java-versions-in-macos-9a9c4f15615a)
 2. [jenv](https://github.com/jenv/jenv)
